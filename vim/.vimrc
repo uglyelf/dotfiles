@@ -11,7 +11,8 @@ filetype plugin on
 compiler ruby
 set wrap
 set ruler
-colorscheme codeschool 
+colorscheme codeschool
+set number
 
 let g:syntastic_python_checkers=['flake8']
 set statusline+=%#warningmsg#
@@ -31,3 +32,15 @@ map <Leader>w :call HandleURI()<CR>
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+" Highlight trailing whitespace on lines
+match Todo /\s\+$/
+
+"Strips trailing whitepsace on save
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
