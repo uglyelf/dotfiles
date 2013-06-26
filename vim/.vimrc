@@ -14,10 +14,12 @@ set ruler
 colorscheme codeschool
 set number
 
+set laststatus=2
 let g:syntastic_python_checkers=['flake8']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set statusline+=%F
 
 function! HandleURI()
   let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
@@ -44,3 +46,4 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 autocmd FileType c,cpp,java,php,ruby,python,puppet autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
