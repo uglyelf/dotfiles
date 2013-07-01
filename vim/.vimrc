@@ -11,7 +11,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-repeat'
-Bundle 'tsaleh/vim-matchit'
+
 
 " My Bundles here:
 "
