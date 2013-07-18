@@ -12,6 +12,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-repeat'
 Bundle 'edsono/vim-matchit'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
 
 " My Bundles here:
 "
