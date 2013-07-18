@@ -1,0 +1,16 @@
+[ui]
+username = Bryan Schlief <bryans@darkhorse.com>
+verbose = True
+style = compact
+
+[extensions]
+graphlog =
+pager =
+color =
+
+[alias]
+l = glog --template '{node|short} | {date|isodatesec} | {author|user}: {desc|strip|firstline}\n'
+
+[pager]
+pager = LESS='FRX' less
+attend = annotate, cat, diff, export, glog, log, qdiff, l
