@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
@@ -13,6 +13,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-repeat'
 Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'scrooloose/nerdtree'
 
 set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
 
