@@ -2,6 +2,7 @@
 username = Bryan Schlief <bryans@darkhorse.com>
 verbose = True
 style = compact
+editor = vim
 
 [extensions]
 graphlog =
