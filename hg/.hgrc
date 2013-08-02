@@ -12,10 +12,10 @@ rebase =
 
 [alias]
 l = glog --template '{node|short} | {date|isodatesec} | {author|user}: {desc|strip|firstline}\n'
-slog = log --style=/users/bryans/my/dotfiles/hg/map-cmdline.slog
-glog = glog --style=/users/bryans/my/dotfiles/hg/map-cmdline.glog
-nlog = log --style=/users/bryans/my/dotfiles/hg/map-cmdline.nlog
-sglog = glog --style=/users/bryans/my/dotfiles/hg/map-cmdline.sglog
+slog = log --style=$HOME/my/dotfiles/hg/map-cmdline.slog
+glog = glog --style=$HOME/my/dotfiles/hg/map-cmdline.glog
+nlog = log --style=$HOME/my/dotfiles/hg/map-cmdline.nlog
+sglog = glog --style=$HOME/my/dotfiles/hg/map-cmdline.sglog
 
 [pager]
 pager = LESS='FRX' less
