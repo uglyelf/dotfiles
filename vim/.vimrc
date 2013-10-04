@@ -16,6 +16,7 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 Bundle 'rodjek/vim-puppet'
 Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/YankRing.vim'
 
 set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
 
@@ -62,7 +63,7 @@ set number
 
 set laststatus=2
 let g:syntastic_python_checkers=['flake8']
-let g:syntastic_puppet_checkers=['puppetlint']
+let g:syntastic_puppet_checkers=['puppet-lint']
 let g:syntastic_check_on_open=1
 
 set statusline+=%#warningmsg#
