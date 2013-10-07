@@ -63,7 +63,7 @@ set number
 
 set laststatus=2
 let g:syntastic_python_checkers=['flake8']
-let g:syntastic_puppet_checkers=['puppet-lint']
+let g:syntastic_puppet_checkers=['puppetlint']
 let g:syntastic_check_on_open=1
 
 set statusline+=%#warningmsg#
@@ -97,3 +97,7 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 autocmd FileType c,cpp,java,php,ruby,python,puppet autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
+nmap <Leader>t= :Tabularize /=<CR>
+vmap <Leader>t= :Tabularize /=<CR>
+nmap <Leader>t: :Tabularize /:\zs<CR>
+vmap <Leader>t: :Tabularize /:\zs<CR>
