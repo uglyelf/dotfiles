@@ -18,7 +18,8 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/YankRing.vim'
 
-set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
+"set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
+set guifont=Droid\ Sans\ Mono\ for\ Powerline
 
 " My Bundles here:
 "
@@ -101,3 +102,6 @@ nmap <Leader>t= :Tabularize /=<CR>
 vmap <Leader>t= :Tabularize /=<CR>
 nmap <Leader>t: :Tabularize /:\zs<CR>
 vmap <Leader>t: :Tabularize /:\zs<CR>
+
+set omnifunc=syntaxcomplete#Complete
+
