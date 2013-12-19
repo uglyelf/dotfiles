@@ -140,3 +140,10 @@ let Tlist_WinWidth = 45
 let Tlist_GainFocus_On_ToggleOpen= 1
 let Tlist_Ctags_Cmd = 'ctags'
 let Tlist_Show_One_File = 1
+
+" Puppet integration
+"command! -nargs=+ Grep execute "noautocmd silent lvimgrep /<args>/gj ~/puppet/**/*.pp" | lopen 10
+set kp=pi
+set iskeyword=-,:,@,48-57,_,192-255
+set tags=tags;~/
+
