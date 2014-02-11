@@ -21,6 +21,7 @@ Bundle 'vim-scripts/YankRing.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'nanotech/jellybeans.vim'
 
 "set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
 set guifont=Droid\ Sans\ Mono\ for\ Powerline
@@ -63,7 +64,7 @@ filetype plugin on
 compiler ruby
 set wrap
 set ruler
-colorscheme codeschool
+colorscheme jellybeans
 set number
 
 set laststatus=2
@@ -142,8 +143,15 @@ let Tlist_Ctags_Cmd = 'ctags'
 let Tlist_Show_One_File = 1
 
 " Puppet integration
-"command! -nargs=+ Grep execute "noautocmd silent lvimgrep /<args>/gj ~/puppet/**/*.pp" | lopen 10
 set kp=pi
 set iskeyword=-,:,@,48-57,_,192-255
 set tags=tags;~/
 
+" Window movement without ctrl-w
+map  <C-h> <C-w>h
+map  <C-j> <C-w>j
+map  <C-k> <C-w>k
+map  <C-l> <C-w>l
+
+" F4 to toggle highlighting
+noremap <F4> :set hlsearch! hlsearch?<CR>
