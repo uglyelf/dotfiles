@@ -13,7 +13,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-repeat'
 Bundle 'edsono/vim-matchit'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 Bundle 'rodjek/vim-puppet'
 Bundle 'godlygeek/tabular'

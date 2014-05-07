@@ -8,11 +8,12 @@ fi
 
 export HISTFILESIZE=100000
 export HISTSIZE=100000 
-export HISTIGNORE="ls*:rm*:cd*:CD*:ps*:exit*:reset*:clear*:synaptic*:mkdir*:cat*"
+# export HISTIGNORE="ls*:rm*:cd*:CD*:ps*:exit*:reset*:clear*:synaptic*:mkdir*:cat*"
 export HISTCONTROL=ignoreboth
 shopt -s histappend
 ## export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
+PS1="\W 🌞   "
 export PROMPT_COMMAND='echo -ne "\033]0;\007"'
 [ -f /Users/gregoryr/.django_bash_completion ] && source /Users/gregoryr/.django_bash_completion
 echo "setting up virtualenv"
