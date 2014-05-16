@@ -1,26 +1,27 @@
-filetype off                   " required!
 set nocompatible               " be iMproved
+filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-repeat'
-Bundle 'edsono/vim-matchit'
-Bundle 'scrooloose/nerdtree'
-Bundle 'rodjek/vim-puppet'
-Bundle 'godlygeek/tabular'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'nanotech/jellybeans.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-repeat'
+Plugin 'edsono/vim-matchit'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rodjek/vim-puppet'
+Plugin 'godlygeek/tabular'
+Plugin 'vim-scripts/YankRing.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'nanotech/jellybeans.vim'
+
+call vundle#end()
 
 "set guifont=Source\ Code\ Pro\ Light\ for\ Powerline
 set guifont=Droid\ Sans\ Mono\ for\ Powerline
