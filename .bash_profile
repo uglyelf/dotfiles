@@ -25,6 +25,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 #PATH=PATH$:/sbin:/bin:/usr/bin:/opt/local/bin
 
+export PATH="$PATH:~/Development/android-sdk-macosx/platform-tools:"
 
 # LSCOLORS="DxGxFxdxCxdxdxhbadExEx"
 LSCOLORS=gxfxcxdxbxegedabagacad
@@ -45,8 +46,23 @@ alias ip="curl icanhazip.com"
 alias ls='ls -G'
 alias la="ls -aF"
 alias ld="ls -ld"
-alias ll="ls -l"
+alias ll="ls -lahL"
 alias lt='ls -At1 && echo "------Oldest--"'
 alias ltr='ls -Art1 && echo "------Newest--"'
+alias con="tail -40 -f /var/log/system.log"
+
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
+
+export EDITOR="vi"
+export CLICOLOR=1
+export XCODE="`xcode-select --print-path`"
+
 trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+
 alias digicharm='cd ~/src/dark-horse-digital; workon digital; source .env; charm'
+alias hdjmp='heroku run --app dhd ./manage.py'
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+export JDK_HOME=$(/usr/libexec/java_home)
+

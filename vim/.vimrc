@@ -19,7 +19,8 @@ Plugin 'vim-scripts/YankRing.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'nanotech/jellybeans.vim'
+" Plugin 'nanotech/jellybeans.vim'
+Plugin 'dandorman/vim-colors'
 
 call vundle#end()
 
@@ -64,7 +65,7 @@ filetype plugin on
 compiler ruby
 set wrap
 set ruler
-colorscheme jellybeans
+colorscheme codeschool
 set number
 
 set laststatus=2
